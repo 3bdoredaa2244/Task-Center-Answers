@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "my_portfolio_backend": {
+      "candid": "src/my_portfolio_backend/my_portfolio_backend.did",
+      "package": "my_portfolio_backend",
+      "type": "rust"
+    },
+    "my_portfolio_frontend": {
+      "dependencies": [
+        "my_portfolio_backend"
+      ],
+      "source": [
+        "src/my_portfolio_frontend/build"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
